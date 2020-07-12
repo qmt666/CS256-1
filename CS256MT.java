@@ -9,9 +9,15 @@ public class CS256MT {
     System.out.println("YourGender");
     String gender = in.nextLine();
     System.out.println("YourAge");
-    String age = in.nextLine();
+    int age = Integer.valueOf(in.nextLine());
     System.out.println("YourSkinColor");
     String color = in.nextLine();
-    System.out.println("I'm " + firstname + " " + lastname + ". " + "I'm " + "a " + gender + ". " + "I'm " + age + " years old" + " and" + " I'm " + color + ". " + " I wish this world peace.");
+    if(age>18){
+            System.out.println("I'm " + firstname + " " + lastname + ". " + "I'm " + "a " + gender + ". " + "I'm " + age + " years old" + " and" + " I'm " + color + ". " + " I wish this world peace.");
+        }
+        else{
+            System.out.println("Please fill out this page after reaching the age of 18.");
+        }
+
   }
 }
